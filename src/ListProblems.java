@@ -47,13 +47,14 @@ public class ListProblems {
 	public static void mapOfLists () {
 		
 		HashMap<Integer, LinkedList<String>> hm = new HashMap<Integer, LinkedList<String>>();
+		LinkedList<String> l;
 		
 		if(hm.get(0) == null) {
-			LinkedList<String> l = new LinkedList<String>();
+			l = new LinkedList<String>();
 			l.add("Hello HM 0!");
 			hm.put(0, l);
 		}
-		LinkedList<String> l = hm.get(0);
+		l = hm.get(0);
 		for(String s: l) {
 			System.out.print(s + " ");
 		}
@@ -68,6 +69,31 @@ public class ListProblems {
 			System.out.print(s + " ");
 		}
 		System.out.println();
+
+
+		if(hm.get(1) == null) {
+			l = new LinkedList<String>();
+			l.add("Hello HM 1!");
+			hm.put(1, l);
+		}
+		
+		l = hm.get(1);
+		for(String s: l) {
+			System.out.print(s + " ");
+		}
+
+		System.out.println();
+		l = hm.get(1);
+		l.add("Here I am again HM 1.");
+		hm.put(1, l);
+		
+		l = hm.get(1);
+		for(String s: l) {
+			System.out.print(s + " ");
+		}
+		System.out.println();
+	
+	
 	}
 	
 	
