@@ -32,7 +32,7 @@ public class DecomposeGraph {
 	}
 
 	// As we store vertices as 0 ... N-1,
-	// we remove them accordingly frm the graph.
+	// we remove edges using 0 ... N - 1.
 	private void removeEdge(int v, int w) {
 		G[v][w] = false;
 		G[w][v] = false;
@@ -78,6 +78,11 @@ public class DecomposeGraph {
 			int v = in.nextInt();
 			int w = in.nextInt();
 			dg.addEdge(v, w);
+		}
+		
+		ArrayList<Integer> l = dg.components();
+		for(int i: l) {
+			System.out.println(i);
 		}
 
 		in.close();
