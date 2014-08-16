@@ -1,4 +1,4 @@
-import java.util.HashSet;
+import java.util.*;
 
 public class ArrayProblems {
 
@@ -89,6 +89,55 @@ public class ArrayProblems {
 		System.out.println();
 	}
 
+	/*
+	 * Prints the indices of the two array elements that have the given sum
+	 */
+	
+	public static void indicesSumExists (int [] a, int M) {
+		int N = a.length;
+        HashMap<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
+        ArrayList<Integer> l ;
+
+        for (int j = 0; j < N; j++) {
+            if (map.containsKey(a[j])) {
+                l = map.get(a[j]);
+            } else {
+                l = new ArrayList<Integer>();
+            }
+            l.add(j);
+            map.put(a[j], l);
+        }
+        
+        // Check if two of the values in the array sum to M
+        for (int j = 0; j < N; j++) {
+            int dif = M - a [j];
+            if (dif != a[j]) {
+                if (map.containsKey(dif)) {
+                    l = map.get(dif);
+                    int loc1 = j + 1;
+                    int loc2 = l.get(0) + 1;
+                    System.out.println (loc1 + " " + loc2);
+                    break;
+                }
+            }
+            else {
+                if (map.containsKey(dif)) {
+                    l = map.get(dif);
+                    if (l.size() > 1) {
+                        int loc1 = j + 1;
+                        int loc2 = l.get(1) + 1;
+                        System.out.println (loc1 + " " + loc2);
+                        break;
+                    }
+                }
+                
+            }
+        }
+
+		
+		
+	}
+	
 	public static void printArray(int[] arr) {
 		System.out.print("[");
 		for (int n : arr) {
