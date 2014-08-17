@@ -166,9 +166,7 @@ public class ArrayProblems {
 	private static int quickSelect(int[] arr, int first, int last, int kth) {
 		if (first == last)
 			return arr[first];
-		Random rnd = new Random(System.currentTimeMillis());
-		int pivot = rnd.nextInt(arr.length);
-		//int pivot = arr[first];
+		int pivot = first;
 		int index = partition(arr, first, last, pivot);
 		if (index == kth) return arr[index];
 		else if (kth < index) return quickSelect(arr, first, index - 1, kth);
@@ -211,12 +209,24 @@ public class ArrayProblems {
 				+ ArrayProblems.binarySearchRotatedArray(arr1, 2));
 		System.out.println("10 is located at "
 				+ ArrayProblems.binarySearchRotatedArray(arr1, 10));
-		*/
+		
 		
 		System.out.println ("5th element is = " + ArrayProblems.quickSelect(arr1, 5));
 		System.out.println ("1st element is = " + ArrayProblems.quickSelect(arr1, 1));
 		System.out.println ("8th element is = " + ArrayProblems.quickSelect(arr1, 8));
 		
+		*/
+		
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
+        System.out.println(N);
+        int [] arr = new int[N];
+        for (int i = 0; i < N; i++) arr[i] = in.nextInt();
+        int median = quickSelect (arr, (N + 1)/2);
+        System.out.println (median);
+        Arrays.sort(arr);
+        System.out.println(arr[(N - 1)/2]);
+		in.close();
 	}
 
 }
