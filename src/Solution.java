@@ -1,3 +1,7 @@
+/**
+ * Template for HackerRank submission to read input. 
+ */
+
 import java.util.*;
 
 public class Solution {
