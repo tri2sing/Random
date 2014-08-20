@@ -11,6 +11,9 @@ public class Solution {
 		int T = in.nextInt();
 		for (int i = 0; i < T; i++) {
 			int N = in.nextInt();
+            int [] arr = new int [N];
+            for (int j = 0; j < N; j++) 
+                arr[i] = in.nextInt ();
 		}
 		in.close();
 	}
