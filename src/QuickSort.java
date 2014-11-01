@@ -34,7 +34,7 @@ public class QuickSort {
 		int rightmostChecked;
 		int leftmostGreaterThanPivot = left + 1;  // Any element from this to the right is greater than pivot
 		
-		for(rightmostChecked = left + 1; rightmostChecked <= right; rightmostChecked++) {
+		for(rightmostChecked = left + 1; rightmostChecked < right + 1; rightmostChecked++) {
 			if(array[rightmostChecked] < pivotVal) {
 				swap(array, rightmostChecked, leftmostGreaterThanPivot);
 				leftmostGreaterThanPivot++;
@@ -59,15 +59,7 @@ public class QuickSort {
 			return 0;
 		}
 		
-		// Do not need to partition an array of two elements
-		// And the number of swaps to return is 1
-		if ((left + 1) == right){
-			if(array[left] > array[right])
-				swap(array, left, right);
-			return 1;
-		}
-		
-		int len = right - left + 1;
+		int len = right - left + 1;  // because of zero based indexing
 		int pivotIndex;
 		switch (choice) {
 		case LEFT:
@@ -77,11 +69,20 @@ public class QuickSort {
 			pivotIndex = right;
 			break;
 		case MEDIAN:
-			int median = left + (right - left)/2;
-			// As there are no repeated numbers we ignore equality tests
-			if(array[left] < array[median] && array[median] < array[right])
-				pivotIndex = median;
-			else if(array[left] < array[right] && array[right] < array[median])
+			int middle; 
+			if(len%2 == 0) {
+				middle = left + (len/2) - 1;
+			}
+			else {
+				middle = left + ((len + 1)/2) - 1;
+			}
+			if(array[left] < array[middle] && array[middle] < array[right])
+				pivotIndex = middle;
+			else if(array[left] > array[middle] && array[middle] > array[right])
+				pivotIndex = middle;
+			else if(array[left] < array[right] && array[right] < array[middle])
+				pivotIndex = right;
+			else if(array[left] > array[right] && array[right] > array[middle])
 				pivotIndex = right;
 			else 
 				pivotIndex = left;
@@ -124,9 +125,13 @@ public class QuickSort {
 		for(int i = 0; i < N; i++) {
 			array[i] = scanner.nextInt();
 		}
+		// Need to make a copy of the array for using as input in cases.
 
-		System.out.println("Swaps using left element as pivot = " + QuickSort.swap(array, QuickSort.LEFT));
-		System.out.println("Swaps using right element as pivot = " + QuickSort.swap(array, QuickSort.RIGHT));
+		int [] left = Arrays.copyOf(array, array.length);
+		int [] right = Arrays.copyOf(array, array.length);
+
+		System.out.println("Swaps using left element as pivot = " + QuickSort.swap(left, QuickSort.LEFT));
+		System.out.println("Swaps using right element as pivot = " + QuickSort.swap(right, QuickSort.RIGHT));
 		System.out.println("Swaps using median element as pivot = " + QuickSort.swap(array, QuickSort.MEDIAN));
 		
 	}
