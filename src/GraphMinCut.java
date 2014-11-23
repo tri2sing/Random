@@ -60,7 +60,6 @@ public class GraphMinCut {
 			}
 
 		}
-		// As the input data has an try uv and another vu for a single edge.
 		scan.close();
 	}
 
