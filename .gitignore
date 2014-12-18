@@ -12,3 +12,4 @@ bin/*
 *.war
 *.ear
 
+/bin/
