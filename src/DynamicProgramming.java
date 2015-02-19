@@ -50,7 +50,7 @@ public class DynamicProgramming {
 	private static <T> ArrayList<T> backtrackLCSLengths(int[][] lengths, T[] X, int i, T[] Y, int j) {
 		if (i == 0 || j == 0)
 			return new ArrayList<T>();
-		else if (X[i - 1] == Y[j - 1])  {
+		else if (X[i - 1].equals(Y[j - 1]))  {
 			ArrayList<T> answer =  backtrackLCSLengths(lengths, X, i - 1, Y, j - 1);
 			answer.add(X[i - 1]);
 			return answer;
@@ -75,7 +75,7 @@ public class DynamicProgramming {
 
 		for (int i = 1; i < lengthX + 1; i++) {
 			for (int j = 1; j < lengthY + 1; j++) {
-				if (X[i - 1] == Y[j - 1]) {
+				if (X[i - 1].equals(Y[j - 1])) {
 					lengths[i][j] = lengths[i - 1][j - 1] + 1;
 				} else {
 					lengths[i][j] = Math.max(lengths[i - 1][j], lengths[i][j - 1]);
