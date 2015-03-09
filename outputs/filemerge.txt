@@ -1,0 +1,9 @@
+apple
+bee
+bird
+elephant
+monkey
+pear
+plane
+snake
+zebra

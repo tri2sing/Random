@@ -1,0 +1,3 @@
+ant,axe
+cat,canteen
+bear,boot

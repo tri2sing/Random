@@ -1,0 +1,279 @@
+#0
+Void~
+                 You are floating in nothing!!!
+~
+134 536 0
+D4
+~
+~
+0 0 2375
+S
+#1
+Limbo~
+   You are floating in a formless void, detached from all
+sensation of physical matter, surrounded by swirling glowing
+lights, which fade into the relative darkness around you
+without any trace of edge or shadow.
+~
+134 28 0
+D4
+~
+~
+0 0 7
+S
+#2
+Hell~
+   You can feel a very warm heat radiating from all directions
+in this resting place of the damned!
+~
+134 16456 0
+D0
+~
+~
+0 0 2
+D1
+~
+~
+0 0 2
+D2
+~
+~
+0 0 2
+D3
+~
+~
+0 0 2
+S
+#3
+Storage~
+   This room is where polymorphed mages bodies are stored.
+~
+134 600 0
+D4
+~
+~
+0 0 1360
+S
+#4
+Storage~
+   This is where link-dead characters equip USED to be kept.
+~
+134 18008 -1 0 7 3 500 0
+S
+#6
+The Sanctuary Morgue Holding Area~
+~
+134 8828 0
+S
+#7
+Portal of Creation~
+   Welcome to the Official Thieves World MUD!
+   Watch your back and have fun!  
+   This MUD is licensed by the trademark holder to use
+   the registered trademark name of Thieves World and
+   copyrighted materials from the written works.
+   
+   This MUD also contains material from non-TW sources.
+   
+   May all your deaths be glorious! 
+~
+134 28 0
+D5
+~
+~
+0 0 1357
+S
+#8
+Object Hoarder Storage~
+~
+134 20220 0
+D4
+~
+~
+0 0 7
+S
+#9
+The Weaponsforger~
+     This blazing hot room houses the fort's Smithy.
+The forge is in the center and there are several weapons and pieces of other
+metal objects strewn about the floor. Sweat is dripping from the tip of your nose.
+If you're not here to get a weapon forged, you should consider leaving.
+Hanging off to one side is a sign.
+~
+134 33281 0
+D1
+~
+~
+0 0 1363
+E
+sign~
+Command: forge <weapon 1> <weapon 2>
+The cost of forging is 100,000 gold plus the value of both weapons being forged.
+~
+S
+#10
+Temple of Shima~
+The Godess of lust and beauty; Shima's Temple makes your body quiver with 
+warmth and longing. Through the open dome an illusion of heaven satiates 
+your senses. The country of the gods, every breeze bear a different perfume. 
+The robes of the immortals are dyed with liquid jewels; they shine in a 
+lambent light. You stand, shaken by longing for the velvet meadows and 
+aquamarine skies.
+~
+134 131092 1
+D3
+~
+~
+0 0 46625
+S
+#11
+Temple of Siveni Gray-Eyes~
+Lightning whips the temple's marble, scarring it black.
+Screeching, a silver raven flap out from between a pair
+of columns and perchs complaining in the topmost branches
+of a golden-appled tree lining the entrance. At the end of
+the white, marble hall is Siveni's great statue in her
+aspect as Defender, seated, armed and helmed, holding her
+battalion vanquishing spear in one hand and her raven
+perched on the other.
+~
+134 131092 1
+D1
+~
+~
+0 0 40791
+E
+statue siveni~
+The great work, the statue that the artist Rahen spent five years fashioning 
+of marble, gold, and ivory, afterward putting down his sculptor's tools 
+forever and saying he knew his life's masterwork when he saw it, and would 
+make no other.
+~
+S
+#12
+Temple of Father Ils~
+You are standing in the golden Temple of Ils, father to all Ilsigi gods. 
+Vacant of furniture, except an altar of purest gold, and above it on the far 
+wall, a painting. Depicted, a scarlet Sikkintair that soar above the heads 
+of feasting gods, the transcendent splendor of the Face of Ils, the grace 
+Eshi pouring wine, and beside her is seated Thilli, or is it Theba..
+~
+134 131092 1
+D0
+~
+~
+0 0 23196
+S
+#13
+Temple of Rita Blue-Eyes~
+Blue light stab your eyes. Where is the light coming from that fill the 
+temple suddenly? The Temple with its white marble floors and Carronnese 
+carpets and gilt furnishings; all included in a spell-circle, a spell that 
+retrieves timelessness as well as time. The light of yesterday, and 
+tomorrow, is available to you - through the eyes of the Godess of Purity and 
+Love.
+~
+134 131092 1
+D1
+~
+~
+0 0 24945
+S
+#14
+Temple of Mother Bey~
+You stumble inside the wildly decorated Temple of the Fish-Eyed Beysibs and 
+their sole Godess - Mother Bey. With your fall comes the light, blazing in 
+through the temple's high narrow windows like the sky splitting; and the 
+thundercrack, one deafening bolt that reverberate over the roofs of 
+Sanctuary - breaking what glass remain unbroken in the temple's windows, and 
+jolting loose what is already shattered, raining it all down on the greenish 
+marble floor in a storm of razory chimings. Then stillness again.
+~
+134 131092 1
+S
+#15
+Temple of Novak~
+In the blinding light inside the Temple of the departed God Novak, you can 
+barely see the book you read from, the stone walls around you; they seem 
+ephemeral as things dream. You set to work; drawing a complex diagram, 
+seemingly a picture of some kind of geometrical solid, though one in which 
+the number of sides seem to change each time one counts them. The finished 
+diagram makes an uneasy flickering in the mind, a feeling that get worse as 
+you start setting the necessary runes and words into the pattern's angles. 
+'The Upraising of the Lost, that is to say, an infallible spell for finding 
+the lost and strayed and stolen..'
+~
+134 131092 1
+S
+#7950
+Hall of Mirrors~
+  You see many reflections of yourself in many strange mirrors,
+some make you fat some make you about 3 inches tall. You feel
+a little disoriented making the exit hard to find.
+~
+134 8 0
+D0
+~
+~
+0 0 7951
+D1
+~
+~
+0 0 7950
+D2
+~
+~
+0 0 7951
+D3
+~
+~
+0 0 7952
+S
+#7951
+Hall of Mirrors~
+  You feel a little disoriented, and get a strange sense of
+deja-vu. All the exits look the same and you can't seem to
+find your way out.
+~
+134 8 0
+D0
+~
+~
+0 0 7950
+D1
+~
+~
+0 0 7950
+D2
+~
+~
+0 0 7950
+D3
+~
+~
+0 0 7950
+S
+#7952
+Hall of Mirrors~
+  You are standing among many reflections of yourself, some
+short some small some make you fat. You feel disoriented and
+find the exit hard to find.
+~
+134 8 0
+D0
+~
+~
+0 0 7950
+D1
+~
+~
+0 0 7950
+D2
+~
+~
+0 0 7979
+D3
+~
+~
+0 0 7951
+S
