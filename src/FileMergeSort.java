@@ -3,8 +3,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import com.sun.org.apache.bcel.internal.generic.F2D;
-
 // Assumption: The three input files are individually sorted.
 
 public class FileMergeSort {
