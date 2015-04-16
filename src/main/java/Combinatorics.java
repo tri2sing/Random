@@ -1,4 +1,29 @@
+import java.util.LinkedList;
+
 public class Combinatorics {
+	
+	// Placeholder for function to write
+	public <T> LinkedList<T> subsets(LinkedList<T> input) {
+		LinkedList<T> results = null;
+		
+		return results;
+	}
+
+	// Placeholder for function to write
+	public <T> LinkedList<T> combinations(LinkedList<T> input) {
+		LinkedList<T> results = null;
+		
+		return results;
+	}
+
+	// Placeholder for function to write
+	public <T> LinkedList<T> permutations(LinkedList<T> input) {
+		LinkedList<T> results = null;
+		
+		return results;
+	}
+	
+
 	/**
 	 * Function to implement n choose k.
 	 * 
