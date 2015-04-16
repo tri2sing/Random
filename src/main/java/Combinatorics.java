@@ -2,23 +2,23 @@ import java.util.LinkedList;
 
 public class Combinatorics {
 	
-	// Placeholder for function to write
-	// Explore both the recursive and bit vector options to 
-	// enumerate all the subsets.
+	// Placeholder for function to write later
+	// Explore recursive and bit vector options to enumerate all the subsets.
+	// Also write an iterator that returns on subset at a time.
 	public <T> LinkedList<T> powerset(LinkedList<T> input) {
 		LinkedList<T> results = null;
 		
 		return results;
 	}
 
-	// Placeholder for function to write
+	// Placeholder for function to write later
 	public <T> LinkedList<T> combinations(LinkedList<T> input) {
 		LinkedList<T> results = null;
 		
 		return results;
 	}
 
-	// Placeholder for function to write
+	// Placeholder for function to write later
 	public <T> LinkedList<T> permutations(LinkedList<T> input) {
 		LinkedList<T> results = null;
 		
