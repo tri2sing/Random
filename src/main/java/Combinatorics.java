@@ -3,7 +3,9 @@ import java.util.LinkedList;
 public class Combinatorics {
 	
 	// Placeholder for function to write
-	public <T> LinkedList<T> subsets(LinkedList<T> input) {
+	// Explore both the recursive and bit vector options to 
+	// enumerate all the subsets.
+	public <T> LinkedList<T> powerset(LinkedList<T> input) {
 		LinkedList<T> results = null;
 		
 		return results;
