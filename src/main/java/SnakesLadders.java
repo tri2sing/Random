@@ -10,7 +10,7 @@ import java.util.Scanner;
  * For each test case:
  *     Line 1: N number of ladders.
  *     Line 2 to N + 1: two integers representing start and end of ladder.
- *     Line N + 2: M: nunber of snakes.
+ *     Line N + 2: M: number of snakes.
  *     Line N + 3 to N + 3 + M: two integers representing start and end of snake.
  */
 
@@ -98,7 +98,7 @@ public class SnakesLadders {
 				if (queue.isEmpty()) {
 					return -1;
 				} else {
-					level++; // Completed a level in the tree
+					level++; 
 					queue.add(SENTINEL);
 				}
 			} else {
