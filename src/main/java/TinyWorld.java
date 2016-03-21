@@ -16,6 +16,7 @@ public class TinyWorld {
 			num++;
 			if (num % 100 == 0) System.out.println(num + ": " + line);
 		}
+		scan.close();
 	}
 	
 	public void sort() {

@@ -30,5 +30,6 @@ public class AnagramTest {
 				System.out.println(diff);
 			}
 		}
+	in.close();
 	}
 }

@@ -82,6 +82,7 @@ public class InversionCount {
 		InversionCount ic = new InversionCount(array);
 		System.out.println(ic.count());
 
+	scanner.close();
 	}
 
 }

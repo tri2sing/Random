@@ -134,6 +134,7 @@ public class QuickSort {
 		System.out.println("Swaps using right element as pivot = " + QuickSort.swap(right, QuickSort.RIGHT));
 		System.out.println("Swaps using median element as pivot = " + QuickSort.swap(array, QuickSort.MEDIAN));
 		
+	scanner.close();
 	}
 
 }

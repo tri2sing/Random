@@ -40,5 +40,6 @@ public class AnagramDeletions {
 		}
 		
 		System.out.println(deletions);
+		in.close();
 		}
 }

@@ -112,6 +112,7 @@ public class DFSBranchCount {
 			int W = in.nextInt(); // Number of branches to test for
 			bc.traverseBranches(startrow, startcol, endrow, endcol, W);
 		}
+	in.close();
 	}
 
 }

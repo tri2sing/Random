@@ -29,6 +29,7 @@ public class SticksCut {
 			}
 			System.out.println(cuts);
 		}
+	in.close();
 	}
 
 }

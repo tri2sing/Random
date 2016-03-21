@@ -36,5 +36,6 @@ public class ArrayEqualParts {
             }
             if (left != right) System.out.println("NO");
         }
+    stdin.close();
     }
 }
